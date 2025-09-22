@@ -1,15 +1,13 @@
-# Treat UE5 C++ source files as C++
+# Treat text-based source code as C++
 *.cpp linguist-language=C++
 *.cxx linguist-language=C++
 *.cc linguist-language=C++
 *.h linguist-language=C++
 *.hpp linguist-language=C++
 
-# Binary UE5 assets (Blueprints, maps) counted as C++ for stats (optional)
-*.uasset linguist-language=C++
-*.umap linguist-language=C++
-
-# Ignore build/cache folders so they don't skew language stats
+# Ignore binary/large asset files so they don't affect stats
+*.uasset linguist-vendored
+*.umap linguist-vendored
 Binaries/** linguist-vendored
 DerivedDataCache/** linguist-vendored
 Intermediate/** linguist-vendored
