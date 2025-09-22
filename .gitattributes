@@ -1,11 +1,9 @@
-# Treat text-based source code as C++
 *.cpp linguist-language=C++
 *.cxx linguist-language=C++
 *.cc linguist-language=C++
 *.h linguist-language=C++
 *.hpp linguist-language=C++
 
-# Ignore binary/large asset files so they don't affect stats
 *.uasset linguist-vendored
 *.umap linguist-vendored
 Binaries/** linguist-vendored
