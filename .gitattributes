@@ -1,6 +1,10 @@
-*.cpp linguist-language=C++
-*.cxx linguist-language=C++
-*.cc linguist-language=C++
-*.h linguist-language=C++
-*.hpp linguist-language=C++
+# Force UE5 binary assets to count as C++
+*.uasset linguist-language=C++
+*.umap linguist-language=C++
 
+# Ignore cache/build folders so they don’t skew stats
+Binaries/** linguist-vendored
+DerivedDataCache/** linguist-vendored
+Intermediate/** linguist-vendored
+Saved/** linguist-vendored
+.vs/** linguist-vendored
