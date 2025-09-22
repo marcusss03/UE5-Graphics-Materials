@@ -4,10 +4,3 @@
 *.h linguist-language=C++
 *.hpp linguist-language=C++
 
-*.uasset linguist-vendored
-*.umap linguist-vendored
-Binaries/** linguist-vendored
-DerivedDataCache/** linguist-vendored
-Intermediate/** linguist-vendored
-Saved/** linguist-vendored
-.vs/** linguist-vendored
