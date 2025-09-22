@@ -1,6 +1,13 @@
-# Force UE5 asset files to count as C#
-*.uasset linguist-language=C#
-*.umap linguist-language=C#
+# Treat UE5 C++ source files as C++
+*.cpp linguist-language=C++
+*.cxx linguist-language=C++
+*.cc linguist-language=C++
+*.h linguist-language=C++
+*.hpp linguist-language=C++
+
+# Binary UE5 assets (Blueprints, maps) counted as C++ for stats (optional)
+*.uasset linguist-language=C++
+*.umap linguist-language=C++
 
 # Ignore build/cache folders so they don't skew language stats
 Binaries/** linguist-vendored
